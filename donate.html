@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color:  lightblue;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 0px 0 10px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        }
+
+        div {
+            padding: 5px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .submitbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .submitbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+			<title>Donate</title>
+            <center>
+                <h1> Blood Doner Registration</h1>
+            </center>
+            <hr>
+            <label> Name </label>
+            <input type="text" name="name" placeholder="Enter your name" size="10" required />
+
+            <div>
+                <label>
+                    Blood :
+                </label>
+
+                <select>
+                    <option value="Select">Select</option>
+                    <option value="A+ve">A+ve</option>
+                    <option value="A-ve">A-ve</option>
+                    <option value="B+ve">B+ve</option>
+                    <option value="B-ve">B-ve</option>
+                    <option value="AB+ve">AB+ve</option>
+                    <option value="AB-ve">AB-ve</option>
+                    <option value="O+ve">O+ve</option>
+                    <option value="O-ve">O-ve</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Gender :
+                </label><br>
+                <input type="radio" value="Male" name="gender" checked> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+
+            </div>
+            <label>
+                Phone :
+            </label>
+            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+
+            Current Address :
+            <textarea cols="80" rows="5" placeholder="Enter your address" value="address" required>
+</textarea>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <button type="submit" class="submitbtn">Submit</button>
+    </form>
+</body>
+
+</html>
